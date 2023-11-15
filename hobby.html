@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+    <style>
+      /* img {
+            width:50%;
+        }
+        body{
+            background-color: lightgray;
+            text-align: center;
+        }
+        a {
+            font-size:24px; 
+        } */
+      img {
+        width: 30%;
+      }
+
+      body {
+        /* background-color: rgb(116, 169, 212); */
+        background-color: rgb(236, 236, 236);
+        text-align: center;
+        font-family: sans-serif;
+        margin: auto;
+      }
+
+      .flex-container {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-top: 2.5%;
+      }
+
+      .flex-container>div {
+        /* background-color: #1e869dc5;
+            border: 5px solid #0f4f65; */
+        background-color: whitesmoke;
+        border-radius: 1%;
+        width: 30%;
+        margin-left: 10%;
+        text-align: center;
+        line-height: 25px;
+        font-size: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        padding-top: 2.5%;
+      }
+      #purewhite {
+        background-color: white;
+      }
+      .backdrop {
+        background-image: url(img/planeblurtwo.jpg);
+        /* filter: blur(6px);
+            -webkit-filter: blur(6px); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        padding-top: 15%;
+        padding-bottom: 20%;
+        font-size: 600%;
+        background-position-y: -200px;
+        color: white;
+        z-index: 2;
+        box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.386), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 5%;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+
+      img {
+        box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin: 1%;
+        margin-bottom: 5%;
+      }
+
+      .desc {
+        background-color: whitesmoke;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        /* border: 5px solid #0f4f65; */
+        border-radius: 2%;
+        width: 50%;
+        text-align: center;
+        margin-left: 25%;
+      }
+
+      .exmaples {
+        font-size: 300%;
+        color: rgb(0, 0, 0);
+        /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.268); */
+      }
+
+      #title {
+        font-size: 75%;
+        /* filter: blur(0px);
+            -webkit-filter: blur(0px); */
+        color: white;
+      }
+
+      .bg-text {
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/opacity/see-through */
+        color: white;
+        font-weight: bold;
+        border: 3px solid #f1f1f1;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* z-index: 2; */
+        width: 80%;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .navbar {
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+      }
+
+      .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .navbar a:hover {
+        background: #ddd;
+        color: black;
+      }
+
+      /* .nav{
+            background-color:black;
+            box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.386), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding-top: 2%;
+            padding-bottom: 2%;
+
+        }
+        a {
+            font-size:24px; 
+            color: rgb(255, 255, 255);
+            border: 10px solid rgb(0, 0, 0);
+            background-color: rgb(0, 0, 0);
+            border-radius: 20%;;
+            text-decoration: none;
+            margin-top: 10px;
+        } */
+      .photography {
+        margin-top: 6%;
+        padding-top: 2%;
+        background-color: rgb(255, 255, 255);
+        margin-bottom: 5%;
+      }
+
+      .list {
+        list-style: none;
+        text-align: left;
+      }
+
+      .flexy {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-top: 2.5%;
+      }
+
+      /* .flexy> div {
+            background-color: #1e869dc5;
+            border: 5px solid #0f4f65;
+            background-color: whitesmoke;
+            border-radius: 1%;
+            width: 30%;
+            margin-left: 10%;
+            text-align: center;
+            line-height: 25px;
+            font-size: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding-left: 2.5%;
+            padding-right: 2.5%;
+            padding-top: 2.5%;
+        } */
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 30%;
+        margin-left: 2.5%;
+        margin-bottom: 5%;
+      }
+
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .container {
+        padding: 2px 16px;
+      }
+
+      #pictures {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-top: 2.5%;
+      }
+
+      .photos {
+        height: auto;
+        width: 50%;
+        
+      }
+
+      .inquiries {
+        list-style: none;
+        line-height: 350%;
+        padding-bottom: 20%;
+      }
+
+      .end {
+        margin-bottom: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="hobby.html">Hobbies</a>
+    </div>
+    <div class="backdrop">
+      <h1 id="title" class="bg-text">Project Car</h1>
+    </div>
+    <div class="flex-container">
+      <div>
+        <h2>About My Car</h2>
+        <p>Currently my car is pushing around 280hp, the ECU is protuned by cobb. While the rest of engine work was done by me. Other than that I've done, headlights, taillights, and foglights. Im currently running BC Racing coilovers</p>
+        <h3>Engine Bolt ons</h3>
+        <div class="flexy">
+          <ul class="list">
+            <li>Cobb Acessport</li>
+            <li>ETS Intake</li>
+            <li>Cobb Bypass Valve</li>
+            <li>Perrin turbo inlet</li>
+            <li>Cobb Boost Controller</li>
+          </ul>
+          <img class="photos" src="img/cobb.png" alt="cobb Acessport">
+        </div>
+      </div>
+      <div>
+        <h2>Future Modifications</h2>
+        <p>In the future I would like to do a full engine build/internals before I push more power at it do to cars unreliablity with high power. I would hope to do atleast a short block with supporting mods. From there I can start looking into doing high power required modifications.</p>
+        <img src="img/block.jpg" alt="short block">
+      </div>
+    </div>
+    <div class="photography">
+      <h1 class="exmaples">Car Photography</h1>
+      <div id="pictures">
+        <div class="card">
+          <img src="img/beama.jpg" style="width: 100%; margin-left:auto;" alt="beama">
+          <div class="container">
+            <h4>
+              <b>Beemer</b>
+            </h4>
+            <p>Shot at BAEZ Meet 206 Ballardvale st Wilmington MA</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/IMG_0354.jpg" style="width: 100%; margin-left:auto;" alt="supra">
+          <div class="container">
+            <h4>MK5 Supra</h4>
+            <p>Shot at BAEZ Meet 206 Ballardvale st Wilmington MA</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/IMG_0375.jpg" style="width: 100%; margin-left:auto;" alt="wrx">
+          <div class="container">
+            <h4>Evo Eye WRX</h4>
+            <p>Shot in Arms Park in Manchester NH</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="flex-container end">
+      <div>
+        <h2>Current Setup</h2>
+        <p>I am currently using a canon g16 camera for my photography. I often enjoy taking photos of my car, friends cars and random peoples cars I meet at car meets.</p>
+        <img style="width: 60%;" src="img/g16.png" alt="g16 camera">
+      </div>
+      <div>
+        <h2>Photography Inquiries</h2>
+        <ul class="inquiries">
+          <li>Oliver Contact</li>
+          <li>(603)673-4001</li>
+          <li>
+            <a href="mailto:ojm1033@usnh.edu.com">ojm1033@usnh.edu.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
