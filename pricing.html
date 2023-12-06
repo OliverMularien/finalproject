@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
-              body {
+    body {
         /* background-color: rgb(116, 169, 212); */
         background-color: rgb(236, 236, 236);
         text-align: center;
@@ -88,13 +88,13 @@
       }
 
       .bg-text {
-        background-color: rgb(0, 0, 0);
+        /* background-color: rgb(0, 0, 0); */
         /* Fallback color */
-        background-color: rgba(0, 0, 0, 0.4);
+        /* background-color: rgba(0, 0, 0, 0.4); */
         /* Black w/opacity/see-through */
         color: white;
         font-weight: bold;
-        border: 3px solid #f1f1f1;
+
         position: absolute;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -104,6 +104,14 @@
         text-align: center;
       }
 
+      /* .navbar {
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+      } */
       .navbar {
         overflow: hidden;
         background-color: #333;
@@ -112,20 +120,14 @@
         width: 100%;
         z-index: 1;
       }
-
       .navbar a {
-        float: left;
+        /* float: left; */
         display: block;
         color: #f2f2f2;
         text-align: center;
-        padding: 14px 16px;
+        /* padding: 14px 16px; */
         text-decoration: none;
         font-size: 17px;
-      }
-
-      .navbar a:hover {
-        background: #ddd;
-        color: black;
       }
     .columns {
     float: left;
@@ -184,43 +186,71 @@
 </head>
 
 <body>
-    <div class="navbar">
+    <!-- <div class="navbar">
         <a href="index.html">Home</a>
         <a href="hobby.html">Hobbies</a>
         <a href="pricing.html">Pricing</a>
         <a href="photoshoot.html">Photoshoot</a>
+      </div> -->
+
+      <div class="navbar">
+        <div class="w3-row">
+          <div class="w3-col w3-container  l2">
+            <a href="index.html">Home</a>         
+          </div>
+          <div class="w3-col w3-container l2">  
+            <a href="hobby.html">Hobbies</a>
+          </div>
+          <div class="w3-col w3-container l2">  
+            <a href="pricing.html">Pricing</a>
+          </div>
+          <div class="w3-col w3-container l2">  
+            <a href="photoshoot.html">Photoshoot</a>
+          </div>
+          <div class="w3-col w3-container l2">  
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="w3-col w3-container l2">  
+            <a href="steps.html">Steps</a>
+          </div>
+        </div>
+  
       </div>
+  
+
       <div class="backdrop">
         <h1 id="title" class="bg-text">Photography Pricing</h1>
       </div>
 
 
       <div class="w3-container w3-content w3-center w3-padding-32">
-        <p class="w3-justify">We have created a fictional website for UNHM. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <h2 class="w3-text-black">Pricing</h2>
+        <p class="w3-justify">We have different levels photography packs, each allow you to get more out of us. Below are the listed differences and comparissions to each offered level.</p>
+       
         <div class="w3-row-padding">
           <div class="w3-third">
             <div class="columns">
                 <ul class="price">
                   <li class="header">Basic</li>
-                  <li class="grey">$ 9.99 / year</li>
-                  <li>10GB Storage</li>
+                  <li class="grey">$ 9.99</li>
+                  <li>Parked Photos</li>
                   <li>Raw Images</li>
-                  <li>10 Domains</li>
-                  <li>1GB Bandwidth</li>
-                  <li class="grey"><a href="#" class="button">Sign Up</a></li>
+                  <li>10 Photos</li>
+                  <li>Non Priority</li>
+                  <li class="grey"><a href="#" class="button">Request</a></li>
                 </ul>
               </div>
           </div>
           <div class="w3-third">
             <div class="columns">
                 <ul class="price">
-                  <li class="header" style="background-color:#04AA6D">Pro</li>
-                  <li class="grey">$ 24.99 / year</li>
-                  <li>25GB Storage</li>
-                  <li>Edited Images</li>
-                  <li>25 Domains</li>
-                  <li>2GB Bandwidth</li>
-                  <li class="grey"><a href="#" class="button">Sign Up</a></li>
+                  <li class="header" style="background-color:rgb(95, 210, 255)">Pro</li>
+                  <li class="grey">$ 24.99</li>
+                  <li>Parked Photos</li>
+                  <li>Light Correction</li>
+                  <li>25  Photos</li>
+                  <li>High Priority</li>
+                  <li class="grey"><a href="#" class="button">Request</a></li>
                 </ul>
               </div>
           </div>
@@ -228,12 +258,12 @@
             <div class="columns">
                 <ul class="price">
                   <li class="header">Premium</li>
-                  <li class="grey">$ 49.99 / year</li>
-                  <li>50GB Storage</li>
-                  <li>50 Emails</li>
-                  <li>50 Domains</li>
-                  <li>5GB Bandwidth</li>
-                  <li class="grey"><a href="#" class="button">Sign Up</a></li>
+                  <li class="grey">$ 49.99</li>
+                  <li>Rollers + Parked</li>
+                  <li>Full Edits</li>
+                  <li>50  Photos</li>
+                  <li>High Priority</li>
+                  <li class="grey"><a href="#" class="button">Request</a></li>
                 </ul>
               </div>
           </div>

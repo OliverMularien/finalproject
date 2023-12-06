@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+      img {
+        width: 30%;
+      }
+
+      body {
+        background-color: rgb(236, 236, 236);
+        text-align: center;
+        font-family: sans-serif;
+        margin: auto;
+      }
+
+      .flex-container {
+        display: flex;
+        flex-wrap: nowrap;
+        margin-bottom: 5%;
+      }
+
+      .card {
+        background-color: whitesmoke;
+        border-radius: 1%;
+        /* width: 30%;
+        margin-left: 10%; */
+        text-align: center;
+        line-height: 25px;
+        font-size: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        padding-top: 2.5%;
+      }
+
+      .backdrop {
+        background-image: url(img/vw/IMG_9460.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        font-size: 600%;
+        background-position-y: -400px;
+        color: white;
+        margin-top: 0px;
+        /* margin-bottom: 5%; */
+      }
+
+      /* .nav{
+            background-color:black;
+            box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.386), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding-top: 2%;
+            padding-bottom: 2%;
+
+        } */
+      /* .navbar {
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+      } */
+      .navbar {
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+      }
+      .navbar a {
+        /* float: left; */
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        /* padding: 14px 16px; */
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .navbar a:hover {
+        background: #ddd;
+        color: black;
+      }
+
+      /* a {
+            font-size:24px; 
+            color: rgb(255, 255, 255);
+            border: 10px solid rgb(0, 0, 0);
+            background-color: rgb(0, 0, 0);
+            border-radius: 20%;;
+            text-decoration: none;
+            margin-top: 10px;
+        } */
+      img {
+        width: 100%;
+        margin-bottom: 10%;
+      }
+
+      .flexy {
+        display: flex;
+        flex-wrap: nowrap;
+      }
+
+      ol {
+        list-style: none;
+        text-align: left;
+        line-height: 150%;
+      }
+
+      .split {
+        width: 50%;
+      }
+      .fix {
+        background-color: whitesmoke;
+        border-radius: 1%;
+
+        margin-left: 10%;
+        text-align: center;
+        line-height: 25px;
+        font-size: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        padding-top: 2.5%;
+      }
+      body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box;}
+
+    input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    }
+
+    input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+    background-color: #45a049;
+    }
+
+    .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    }
+    .grey {
+        background-color: rgb(224, 224, 224);
+        padding-top:5%;
+        padding-bottom:5%;
+    }
+    </style>
+  </head>
+<body>
+    
+    <div class="navbar">
+        <div class="w3-row">
+          <div class="w3-col w3-container  l2">
+            <a href="index.html">Home</a>         
+          </div>
+          <div class="w3-col w3-container l2">  
+            <a href="hobby.html">Hobbies</a>
+          </div>
+          <div class="w3-col w3-container l2">  
+            <a href="pricing.html">Pricing</a>
+          </div>
+          <div class="w3-col w3-container l2">  
+            <a href="photoshoot.html">Photoshoot</a>
+          </div>
+          <div class="w3-col w3-container l2">  
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="w3-col w3-container l2">  
+            <a href="steps.html">Steps</a>
+          </div>
+        </div>
+  
+      </div>
+    <div class="backdrop">
+        <h1 id="title" class="bg-text">Pricing</h1>
+    </div>
+
+    <div class="grey">
+        <h2>Get In Touch...</h2>
+        <p>If you have not yet read about my process & packages, please head to the "pricing" tab on my site to learn more before reaching out.
+            Once you've read through all of the information, the easiest and most efficient way to schedule your session is to fill out the contact form. I’ll get back to you within 48 hours with available dates and times and I will hit you back!</p>
+            <p><i>Up to 2023 books are currently closed. While I wish I there were more days in the year to fit more cars in, I have no remaining availability until the spring! I do not have a waitlist/cancellation list either, but if you would like to snag a spring date then now is the time to reach out!!</i></p>
+    </div>
+    <div class="w3-row">
+        <div class="w3-col w3-container s12 m6 l6 card">
+            <div>
+                <h2>Personal Inquiries</h2>
+                <ul class="inquiries">
+                  <li>Oliver Contact</li>
+                  <li>(603)673-4001</li>
+                  <li><a href="mailto:ojm1033@usnh.edu.com">ojm1033@usnh.edu.com</a></li>
+                </ul>
+                <h3>Contact Form</h3>
+
+                <div class="container">
+                  <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                
+                    <label for="country">State</label>
+                    <select id="country" name="country">
+                      <option value="australia">Mass</option>
+                      <option value="canada">NH</option>
+                      <option value="usa">Maine</option>
+                    </select>
+                
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                
+                    <input type="submit" value="Submit">
+                  </form>
+                </div>                
+            </div>
+        </div>
+        <div class="w3-col w3-container s12 m6 l6">  
+            <img src="img/vw/edited.jpg">
+        </div>
+      </div>
+    
+</body>
+</html>
